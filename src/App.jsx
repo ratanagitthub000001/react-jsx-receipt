@@ -5,11 +5,20 @@ function App() {
   let [number, setNumber] = useState(0);
 
   function normalUpdateCount() {
-    setNumber(number + 1);
+    setNumber((number) => number + 1);
+    setNumber((number) => number + 1);
+    setNumber((number) => number + 1);
+    setNumber((number) => number + 1);
+    setNumber((number) => number + 1);
+    setNumber((number) => number + 1);
+    setNumber((number) => number + 1);
+    setNumber((number) => number + 1);
+    setNumber((number) => number + 1);
+    setNumber((number) => number * 10 * 3);
   }
 
   function decreaseCount() {
-    setNumber(number - 1);
+    setNumber((number) => number / 3);
   }
 
   return (
